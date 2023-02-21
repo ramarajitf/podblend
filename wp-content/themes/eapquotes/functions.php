@@ -797,3 +797,95 @@ function twentytwenty_get_elements_array() {
 }
 
 add_filter('use_block_editor_for_post', '__return_false');
+
+/*satheesh changes 31-01-2023*/
+require_once get_template_directory() . '/rss_feed_shortcodes.php';
+
+
+/*Merge feed delete*/
+/* AJAX action callback */
+ add_action('wp_ajax_delete_feed', 'delete_merge_feed');
+ add_action('wp_ajax_nopriv_delete_feed', 'delete_merge_feed');
+
+function delete_merge_feed($id)
+{
+
+  global $wpdb;
+    $table_name = "feed_url_cron";
+    $table_name1 = "rss_feed_url";
+    if (isset($_POST['id'])) {
+        $assignment_id = $_POST['id'];
+        if ($wpdb->delete($table_name1, array('merge_name' => $_POST['id'])) && $wpdb->delete($table_name, array('merge_name' => $_POST['id']))) 
+        {
+            return true;
+
+        }
+        
+    } 
+}
+
+
+ add_action('wp_ajax_get_feed', 'get_merge_feed');
+ add_action('wp_ajax_nopriv_get_feed', 'get_merge_feed');
+
+function get_merge_feed()
+{
+
+  global $wpdb;
+    $table_name = "feed_url_cron";
+    $data =   $video_rel = $wpdb->get_results("SELECT * from $table_name");
+
+    $total_records = count($data);
+
+    $json_data = array(
+
+        "draw" => intval($_REQUEST['draw']),
+        "recordsTotal" => intval($total_records),
+        "recordsFiltered" => intval($total_records),
+        "data" => $data,
+    );
+
+    // echo json_encode($json_data);
+    // exit;
+    //     $response = array(
+    //     'data' => $data,
+    //  );
+     wp_send_json( $json_data );
+}
+
+/*Single feed delete*/
+/* AJAX action callback */
+ add_action('wp_ajax_delete_feed_url', 'delete_single_feed');
+ add_action('wp_ajax_nopriv_delete_feed_url', 'delete_single_feed');
+
+function delete_single_feed($id)
+{
+
+  global $wpdb;
+    $table = "rss_feed_url";
+    if (isset($_POST['id'])) {
+        $assignment_id = $_POST['id'];
+        if ($wpdb->delete($table, array('id' => $_POST['id']))) 
+        {
+            return true;
+        }
+        
+    } 
+}
+/*function pmpro_level_cost_text($r, $level, $tags, $short) {
+  $r = sprintf( __( '<strong>%s</strong> now', 'paid-memberships-pro' ), pmpro_formatPrice( $level->initial_payment ) );
+  return $r;
+}
+add_filter('pmpro_level_cost_text', 'pmpro_level_cost_text', 10, 4);*/
+
+//Text to display source & feed count
+function get_feed_limit_for_level($expiration_text, $level) {
+   global $wpdb;
+   $feed_limit = $wpdb->get_results("SELECT * FROM rss_subscribe_settings WHERE subs_id = $level->id"); 
+   //echo $expiration_text ."<br>";
+   echo $feed_limit[0]->feed_limit ." Mixed Feeds" ."<br/>";
+   echo $feed_limit[0]->source_limit ." Source URIs" ."<br/>";
+   
+}
+
+add_filter('pmpro_level_expiration_text', 'get_feed_limit_for_level', 10, 2);

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss  version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+        <atom:link type="application/rss+xml" rel="self" href="https://tech.hindustantimes.com/rss/mobile/reviews" />        
+        <title>Mobiles Review: Latest smartphone Phone Features, Smartphone Specification, Price</title>
+        <link>https://tech.hindustantimes.com/mobile/reviews</link>
+        <description>Mobile Reviews: Browse the latest mobile phone reviews by our experts articles including comparisons, analysis, features, specifications, prices, opinion and more</description>
+        <language>en-us</language>        
+		<copyright>Copyright (C) HT Media Limited. All Rights Reserved.</copyright>
+		<docs>https://tech.hindustantimes.com</docs>
+		<image>
+		<title>Mobiles Review: Latest smartphone Phone Features, Smartphone Specification, Price</title>
+			<link>https://tech.hindustantimes.com/mobile/reviews</link>
+			<url>https://images.hindustantimes.com/tech/img/ht-tech-new-logo.png</url>
+		</image>
+
+<item>
+	<title><![CDATA[Oppo Reno8 T 5G review: Style tops everything here]]></title>
+	<description><![CDATA[The Oppo Reno8 T 5G focuses on design and a feature-rich spec sheet but does that mean you should buy it?]]></description>
+	<link><![CDATA[https://tech.hindustantimes.com/mobile/reviews/oppo-reno-8t-5g-review-style-tops-everything-here-71675521223026.html]]></link>	
+	<guid><![CDATA[https://tech.hindustantimes.com/mobile/reviews/oppo-reno-8t-5g-review-style-tops-everything-here-71675521223026.html]]></guid>
+	<pubDate><![CDATA[Tue, 07 Feb 2023 10:01:54 +0530 ]]></pubDate>
+	<media:content url="https://images.hindustantimes.com/tech/img/2023/02/04/600x338/O1_1675523531295_1675523542811_1675523542811.jpg" medium="image"/>
+
+</item>
+</channel>
+</rss>

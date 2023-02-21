@@ -1,0 +1,41 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel>
+<atom:link href="" rel="self" type="application/rss+xml"/>
+<title></title>
+<link></link>
+<language></language>
+<copyright></copyright>
+<description></description>
+<image>
+<url></url>
+<title></title>
+<link></link>
+</image>
+<itunes:explicit></itunes:explicit>
+<itunes:type></itunes:type>
+<itunes:subtitle></itunes:subtitle>
+<itunes:author></itunes:author>
+<itunes:summary></itunes:summary>
+<itunes:owner>
+<itunes:name></itunes:name>
+<itunes:email></itunes:email>
+</itunes:owner>
+<itunes:image href=""/>
+<itunes:category text=""> </itunes:category><item>
+<title>JEE Main 2023 session 1 paper 2 (BArch, BPlanning) result awaited</title>
+<link>https://www.hindustantimes.com/education/exam-results/jee-main-2023-session-1-paper-2-barch-bplanning-result-awaited-at-jeemainntanicin-101676278075019.html</link>
+<description>JEE Main Paper 2 Result: Once announced, candidates can check their scorecards on jeemain.nta.nic.in and/or ntaresults.nic.in.</description>
+<pubDate>Mon, 13 Feb 2023 09:52:06 GMT</pubDate>
+<itunes:title xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">JEE Main 2023 session 1 paper 2 (BArch, BPlanning) result awaited</itunes:title>
+<itunes:episodeType xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:episodeType>
+<itunes:episode xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:episode>
+<itunes:author xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:author>
+<itunes:subtitle xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:subtitle>
+<itunes:summary xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:summary>
+<itunes:duration xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:duration>
+<itunes:explicit xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"></itunes:explicit>
+<content:encoded><p>JEE Main Paper 2 Result: Once announced, candidates can check their scorecards on jeemain.nta.nic.in and/or ntaresults.nic.in.</p></content:encoded>
+<enclosure url="" type=""/>
+<guid isPermaLink="false">https://www.hindustantimes.com/education/exam-results/jee-main-2023-session-1-paper-2-barch-bplanning-result-awaited-at-jeemainntanicin-101676278075019.html</guid>
+<enclosure url="" length="0" type="audio/mpeg"/>
+</item></channel>
+</rss>
