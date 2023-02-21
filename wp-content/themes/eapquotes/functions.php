@@ -883,8 +883,8 @@ function get_feed_limit_for_level($expiration_text, $level) {
    global $wpdb;
    $feed_limit = $wpdb->get_results("SELECT * FROM rss_subscribe_settings WHERE subs_id = $level->id"); 
    //echo $expiration_text ."<br>";
-   echo $feed_limit[0]->feed_limit ." Mixed Feeds" ."<br/>";
-   echo $feed_limit[0]->source_limit ." Source URIs" ."<br/>";
+   echo "<p>". $feed_limit[0]->feed_limit ." Mixed Feeds </p>" ."<br/>";
+   echo "<p>".$feed_limit[0]->source_limit ." Source URLs </p>" ."<br/>";
    
 }
 
