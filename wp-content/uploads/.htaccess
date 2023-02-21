@@ -1,0 +1,9 @@
+
+ #Added by HostingRaja Security team, Please do not edit below.
+ #For Support contact support@hostingraja.in
+ # Forbidding PHP files execution
+ <FilesMatch “\.(php|php\.)$”>
+ 	Order Allow,Deny
+ 	Deny from all
+ </FilesMatch>
+
