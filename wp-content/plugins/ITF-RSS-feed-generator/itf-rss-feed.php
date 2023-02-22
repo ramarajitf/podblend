@@ -1739,6 +1739,8 @@ do_action("feed_settings");
 
     $query = "UPDATE rss_subscribe_settings SET 
             feed_limit = '".$_POST['feed_limit']."',
+            feed_description = '".$_POST['feed_desc']."',
+            url_description = '".$_POST['url_desc']."',
             source_limit = '".$_POST['url_limit']."'
             WHERE subs_id = '".($_REQUEST['subs_id'])."'";
 
@@ -1781,8 +1783,16 @@ do_action("feed_settings");
         <input type="text" name="feed_limit" class="form-control" id="feed_limit" value="<?php echo $feed_limit[0]->feed_limit; ?>" placeholder="">
     </div>
     <div class="form-group">
+        <label for="feed_desc">Feed Description</label>
+        <input type="text" name="feed_desc" class="form-control" id="feed_desc" value="<?php echo $feed_limit[0]->feed_description; ?>" placeholder="">
+    </div>
+    <div class="form-group">
         <label for="url_limit">URL limit</label>
         <input type="text" name="url_limit" class="form-control" id="url_limit" value="<?php echo $feed_limit[0]->source_limit; ?>" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="url_desc">URL Description</label>
+        <input type="text" name="url_desc" class="form-control" id="url_desc" value="<?php echo $feed_limit[0]->url_description; ?>" placeholder="">
     </div>
     <input type="hidden" name="subs_id" value="<?php echo $feed_limit[0]->subs_id; ?>">
     <input class="generator_submit" type="submit" name="feed_count" value="Update">
